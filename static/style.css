@@ -1,1 +1,173 @@
-
+/* Header styling */
+.header {
+    padding: 10px 20px;
+    background-color: #d7b7e7; /* Deep purple */
+    color: #a18888;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+ 
+/* Border styling for forms or containers */
+.border {
+    padding: 20px;
+    max-width: 500px;
+    border: 1px solid #6A0D91; /* Matching border color */
+    border-radius: 10px;
+    background-color: #D8BFD8; /* Light purple */
+    box-shadow: 0px 4px 8px rgba(206, 134, 134, 0.1); /* Adds a subtle shadow for depth */
+    margin: auto; /* Centers the container */
+}
+ 
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+#form{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
+ 
+/* Button styling */
+.btn {
+    padding: 12px 24px;
+    background-color: #6A0D91; /* Deep purple */
+    color: #FFFFFF;
+    font-style: italic;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.btn:hover {
+    background-color: #4B0082; /* Darker purple on hover */
+}
+ 
+/* Textbox styling */
+.textbox {
+    padding: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #6A0D91; /* Matching border color */
+    border-radius: 5px;
+    color: #6A0D91; /* Text color to match the theme */
+    font-size: 1em;
+    width: 100%; /* Full width of its container */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+ 
+.textbox::placeholder {
+    color: #D8BFD8; /* Placeholder color matching light purple */
+    font-style: italic;
+    font-weight: normal;
+}
+ 
+/* General text styling */
+.word {
+    color: #6A0D91; /* Deep purple */
+    font-style: italic;
+    font-weight: bold;
+}
+ 
+/* Bottom text styling */
+.bottom {
+    color: #6A0D91; /* Deep purple */
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+ 
+ 
+h1{
+    text-align: center;
+    color:#792099;
+}
+ 
+#form button{
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+}
+ 
+.content p {
+    text-indent: 20px; /* Indentation for paragraphs */
+    margin: 0; /* Remove default margin for consistent spacing */
+}
+.token-container {
+ 
+    padding: 10px 20px;
+    background-color: #d7b7e7; /* Deep purple */
+    color: #a18888;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+ 
+    color: #a18888;
+    box-shadow: 0px 4px 8px rgba(206, 134, 134, 0.1);
+    font-size: 12px; /* Adjust font size */
+    word-wrap: break-word; /* Ensure long text wraps correctly */
+}
+.token-container h2 {
+    margin-top: 0;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.selectpicker {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+ 
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+ 
+.btn {
+    background-color:  #4B0082;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.btn:hover {
+    background-color: #0056b3;
+}
+ 
+.row {
+    display: flex;
+    justify-content: center;
+}
+ 
+.col-md-10 {
+    flex: 0 0 80%;
+}
+ 
+.card-body h5 {
+    margin: 20px 0;
+}
