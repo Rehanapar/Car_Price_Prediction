@@ -1,1 +1,84 @@
-
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Car Price Predictor</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">              
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Welcome to Car Price Predictor</h1>
+             </div></br></br></br>
+                     <h1 class="bottom">
+                        Welcome !</br> This app predicts the price of a car you want to sell. Try filling the details below:
+                        </br></br></br>
+            <h2 class="word">
+                <form action="{{ url_for('predict') }}" method="post">
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Select the Model:</b> </label><br>
+                        <select class="selectpicker form-control" id="model" name="model" required="1">
+                            {% for model in models %}
+                            <option value="{{ model }}">{{ model }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Select the Year:</b> </label><br>
+                        <select class="selectpicker form-control" id="year" name="year" required="1">
+                            {% for year in years %}
+                            <option value="{{ year }}">{{ year }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Select Motor Type:</b> </label><br>
+                        <select class="selectpicker form-control" id="motor_type" name="motor_type" required="1">
+                            {% for motor_type in motor_types %}
+                            <option value="{{ motor_type }}">{{ motor_type }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the Number of Kilometers that the car has travelled:</b> </label><br>
+                        <input type="text" class="form-control" id="running" name="running"
+                               placeholder="Enter the kilometers driven" required>
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Select the Type:</b> </label><br>
+                        <select class="selectpicker form-control" id="type" name="type" required="1">
+                            {% for type in types %}
+                            <option value="{{ type }}">{{ type }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Select the Status:</b> </label><br>
+                        <select class="selectpicker form-control" id="status" name="status" required="1">
+                            {% for stat in status %}
+                            <option value="{{ stat }}">{{ stat }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the Motor Volume:</b> </label><br>
+                        <input type="text" class="form-control" id="motor_volume" name="motor_volume"
+                               placeholder="Enter the Motor volume" required>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <button class="btn btn-primary form-control" type="submit">Predict Price</button>
+                    </div>
+                </form>
+               
+            </h2>
+ 
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
