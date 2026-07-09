@@ -100,7 +100,7 @@ The model was evaluated using:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Car-Price-Prediction.git
+git clone https://github.com/Rehanapar/Car-Price-Prediction.git
 ```
 
 ### Navigate to the Project
